@@ -1,13 +1,13 @@
-# Cloud Dial Studio
+# Cloud Dial Studio - Improved version of the shut down tool ATSDialFactory
 
-<img width="2558" height="1306" alt="Screenshot 2026-07-25 125028" src="https://github.com/user-attachments/assets/d242d4f5-b335-43f2-9dd2-67ac6056b9fc" />
+<img width="2559" height="1309" alt="Screenshot 2026-08-21 161747" src="https://github.com/user-attachments/assets/464464b6-17c8-4d7d-8757-480a2e0bdee7" />
 
 A browser-based watch face editor written in TypeScript for IDO smartwatches powered by Actions MCU platforms.
 
 Cloud Dial Studio allows users to create, edit, preview, and export custom watch faces using the IDO watch face format.
 
 ## Notice
-After looking further, the IDB03 actually uses the watch_15 widget, but not watch widget. Use the watch widget for IDB03 at your own risk.
+After looking further, older devices such as ID207, IDB03, or others use the watch_15 widget. Adding support for those watches will need to take some time.
 
 ## Features
 
@@ -27,26 +27,24 @@ Currently supported:
 
 ### Smartwatches:
 * IDW13
+* IDW17
 * IDW18
 * IDW20
+* TIT15
+
+### Rugged Smartwatches:
+* ID Sport03
 
 ### Smartbands:
-* IDB03
+* GTBand
 
-Additional Actions MCU-based IDO smartwatch models (e.g. IDSport03) may be supported in future releases.
-
-## Watch faces made with Cloud Dial Studio
-### petsim1 (IDW13) (Pet Simulator 99 Watch Face)
-<img width="174" height="196" alt="preview_idw13" src="https://github.com/user-attachments/assets/69599058-4ecf-4055-ad2d-4675787d4741" />
-
-### petsim1 (IDB03) (Pet Simulator 99 Watch Face)
-<img width="154" height="240" alt="preview_idb03" src="https://github.com/user-attachments/assets/fbf35557-d094-43b8-b052-94ef2c2b1dcd" />
+Additional Actions MCU-based IDO smartwatch models (e.g. ID208BT) may be supported in future releases.
 
 ## Known Issues
 
-The widget rendering system is still being improved, so expect issues:
+The background corner matcher is still being improved, so bugs may happen:
 
-* Hour widget may not have a zero
+* Background Corner Matcher's image might not show up
 
 ## Packing Watch Faces
 Cloud Dial Studio does not support compiling watch faces into a binary format (.iwf). To pack a watch face into an .iwf file, you must install these files/packages first:
@@ -56,7 +54,7 @@ Cloud Dial Studio does not support compiling watch faces into a binary format (.
 
 Usage: `python iwf_packer.py INPUT_FOLDER OUTPUT_FILE`
 
-<img width="1357" height="1204" alt="Untitled - July 20, 2026 at 17 30 03" src="https://github.com/user-attachments/assets/2b3b544f-239e-49ea-8bd2-b181912f8b56" />
+<img width="1357" height="1204" alt="Screenshot 2026-07-20 172918" src="https://github.com/user-attachments/assets/5832f9b1-4b6f-4835-bc49-93cf471c658f" />
 
 ## Important Notes
 * Ring widgets, Progressbar widgets, and some custom widgets are not supported yet. They will be added once reverse-engineered further.
