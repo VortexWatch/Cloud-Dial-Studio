@@ -256,10 +256,10 @@ export const DEVICE_PROFILES: Record<DeviceId, DeviceProfile> = {
     previewH: 182,
     previewCornerRadius: 0,
     previewBorderColor: "rgb(255, 255, 0)",
-    previewBorderWidth: 1,
+    previewBorderWidth: 2,
     previewBorderRectWidth: 92,
     previewBorderRectHeight: 182,
-    previewScale: 1,
+    previewScale: 0.99,
     displayCornerRadius: 0,  // NEW
   },
   "ID Sport03": {
