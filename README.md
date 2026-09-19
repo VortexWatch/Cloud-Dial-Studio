@@ -1,4 +1,4 @@
-# Cloud Dial Studio - Improved version of the shut down tool ATSDialFactory
+# Cloud Dial Studio
 
 <img width="2559" height="1309" alt="Screenshot 2026-08-21 161747" src="https://github.com/user-attachments/assets/464464b6-17c8-4d7d-8757-480a2e0bdee7" />
 
